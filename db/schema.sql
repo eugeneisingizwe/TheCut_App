@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS theCut_db;
+CREATE DATABASE theCut_db;

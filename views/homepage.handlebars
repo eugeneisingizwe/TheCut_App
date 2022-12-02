@@ -1,0 +1,23 @@
+<!-- loop through each barbers and render appointment details-->
+  {{#each barbers as |barber|}}
+  <section class="col-12 col-md-8 col-lg-9">
+        <div class="table-responsive">
+           <h2>
+      <!-- Rander scheduled appointment -->
+      <a href="/barber/{{barber.id}}">{{barber.name}}</a>
+    </h2>
+          <table class="table table-bordered custom-table">
+            <thead>
+              <tr>
+                <th scope="col">Selected Barber{{available_barbers}}</th>
+                <th scope="col">Selected Service{{select_service}}</th>
+                <th scope="col">Haircut Price ($){{price}}</th>
+                <th scope="col">Selected Date{{select_data}}</th>
+                <th scope="col" class="p-3"></th>
+              </tr>
+            </thead>
+            <tbody id="barber-display"></tbody>
+          </table>
+        </div>
+      </section>
+      {{/each}}
